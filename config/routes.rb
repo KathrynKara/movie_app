@@ -1,6 +1,8 @@
 MoviesApp::Application.routes.draw do
   root "movies#index"
-  get "movies/index"
+  resources :movies
+  # get "movies/index"
+
 
   # get "movies/index"
   
