@@ -1,0 +1,5 @@
+<% @movies.each do |movie| %>
+<h2><%= link_to movie.title, movie_path(movie) %></h2>
+<p><%= movie.description %></p>
+<p><%= movie.year_released %></p>
+<% end %>
